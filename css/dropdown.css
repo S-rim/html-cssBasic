@@ -1,0 +1,66 @@
+body
+{
+    margin: 0;
+    padding: 0;
+}
+
+section
+{
+    height: 55px;
+    width: 100vw;
+    background-color: rgb(252, 223, 228);
+}
+
+nav
+{
+    height: 40px;
+    width: 60vw;
+    margin: 0 auto;
+}
+
+nav ul 
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 60vw;;
+}
+
+nav ul li
+{
+    color: white;
+    line-height: 50px;
+    vertical-align: middle;
+    text-align: center;
+    background-color: rgb(252, 223, 228);
+    width: 20%;
+}
+.mainLi
+{
+    position: relative;
+    float: left;
+}
+
+.mainLi > a,.subMenu > li > a
+{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    color: rgb(204, 37, 255);
+}
+
+.subMenu { 
+    height: 0px;
+    overflow: hidden;
+    transition: height .2s; /* height를 변화 시켰을 때 0.2초간 변화 되도록 설정 */ 
+    position: absolute;
+} 
+    
+.mainLi:hover .subMenu {
+    height: 353px;
+} 
+
+.subMenu > li:hover
+{
+    background-color: pink;
+}
