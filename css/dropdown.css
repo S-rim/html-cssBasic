@@ -6,7 +6,7 @@ body
 
 section
 {
-    height: 55px;
+    height: 51px;
     width: 100vw;
     background-color: rgb(252, 223, 228);
 }
@@ -23,7 +23,7 @@ nav ul
     list-style: none;
     margin: 0;
     padding: 0;
-    width: 60vw;;
+    width: 60vw;
 }
 
 nav ul li
@@ -34,11 +34,13 @@ nav ul li
     text-align: center;
     background-color: rgb(252, 223, 228);
     width: 20%;
+    
 }
 .mainLi
 {
     position: relative;
     float: left;
+    height: 100%;
 }
 
 .mainLi > a,.subMenu > li > a
@@ -54,6 +56,7 @@ nav ul li
     overflow: hidden;
     transition: height .2s; /* height를 변화 시켰을 때 0.2초간 변화 되도록 설정 */ 
     position: absolute;
+    top: 100%;
 } 
     
 .mainLi:hover .subMenu {
